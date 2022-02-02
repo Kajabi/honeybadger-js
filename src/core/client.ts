@@ -102,7 +102,7 @@ export default class Client {
       this.config.reportData = false
     }
     if (!this.__pluginsExecuted) {
-      this.__pluginsExecuted = true
+      // this.__pluginsExecuted = true
       this.config.__plugins.forEach((plugin) => plugin.load(this))
     }
     return this
